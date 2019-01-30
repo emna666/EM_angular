@@ -2,8 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `<app-nav></app-nav>
+  <section>
+    <router-outlet></router-outlet>
+  </section>`
 })
 export class AppComponent {
   title = 'ng7-pre';
