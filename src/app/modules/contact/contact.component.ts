@@ -9,8 +9,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   messageForm: FormGroup;
-  submitted:boolean = false;
-  success:boolean = false;
+  submitted: boolean = false;
+  success: boolean = false;
 
   constructor(private formBuilder: FormBuilder) { }
 
@@ -22,7 +22,7 @@ initForm() {
   this.messageForm = this.formBuilder.group({
     name: ['', Validators.required],
     message: ['', Validators.required]
-  })
+  });
 }
   onSubmit() {
     this.submitted = true;

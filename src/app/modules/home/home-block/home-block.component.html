@@ -1,0 +1,4 @@
+<li [routerLink]= "['/homeUser', block.id]" [ngStyle]="{'background-color': block.color}" >
+  <img [src]="['https://picsum.photos/500/500?image='+block.id]">
+  <p>{{ block.name }} {{ block.year }}</p>
+</li>

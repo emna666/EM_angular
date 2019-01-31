@@ -3,12 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '@modules/home/home.component';
 import { AboutComponent } from '@modules/about/about.component';
 import { ContactComponent } from '@modules/contact/contact.component';
+import {HomeSingleComponent} from "@modules/home/home-single/home-single.component";
 
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'homeUser/:id', component: HomeSingleComponent},
+    { path: '**', redirectTo: HomeComponent }
 ];
 
 @NgModule({

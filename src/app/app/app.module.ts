@@ -9,6 +9,10 @@ import { NavComponent } from '@shared/components/nav/nav.component';
 import { AboutComponent } from '@modules/about/about.component';
 import { ContactComponent } from '@modules/contact/contact.component';
 import { HomeComponent } from '@modules/home/home.component';
+import {HomeBlockComponent} from "@modules/home/home-block/home-block.component";
+import { HomeSingleComponent} from "@modules/home/home-single/home-single.component";
+import {CommonModule} from "@angular/common";
+
 
 @NgModule({
   declarations: [
@@ -16,13 +20,16 @@ import { HomeComponent } from '@modules/home/home.component';
     NavComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    HomeBlockComponent,
+    HomeSingleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
